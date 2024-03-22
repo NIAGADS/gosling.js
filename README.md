@@ -1,3 +1,6 @@
+> NIAGADS fork  - add middleware layer to allow users to proxy our fileservers / api in the interactive editor
+
+
 # Gosling.js
 
 [![npm version](https://img.shields.io/npm/v/gosling.js.svg)](https://www.npmjs.com/package/gosling.js) [![editor status](https://github.com/gosling-lang/gosling.js/actions/workflows/deploy-editor.yml/badge.svg)](https://github.com/gosling-lang/gosling.js/actions/workflows/deploy-editor.yml) [![build status](https://github.com/gosling-lang/gosling.js/actions/workflows/ci.yml/badge.svg)](https://github.com/gosling-lang/gosling.js/actions/workflows/ci.yml) [![codecov](https://img.shields.io/codecov/c/github/gosling-lang/gosling.js/master.svg?cacheSeconds=60)](https://codecov.io/gh/gosling-lang/gosling.js) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier) [![online editor](https://img.shields.io/badge/demo-online_editor-E08243.svg)](https://gosling.js.org/) [![docs](https://img.shields.io/badge/docs-📖-57B4E9.svg)](http://gosling-lang.org/docs/)
