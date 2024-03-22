@@ -111,8 +111,8 @@ const dev = defineConfig({
         'process.env.THREADS_WORKER_INIT_TIMEOUT': 'undefined'
     },
     plugins: [bundleWebWorker, manualInlineWorker],
-    host: true,
     server: { 
+        host: true,
         proxy: {
            '/filer': {
                 target: 'https://lisanwanglab.org/',
