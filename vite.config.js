@@ -110,7 +110,23 @@ const dev = defineConfig({
         'process.platform': 'undefined', // because of the threads library relies on process global
         'process.env.THREADS_WORKER_INIT_TIMEOUT': 'undefined'
     },
-    plugins: [bundleWebWorker, manualInlineWorker]
+    plugins: [bundleWebWorker, manualInlineWorker],
+    server: { 
+        proxy: {
+           '/filer': {
+                target: 'https://lisanwanglab.org/',
+                changeOrigin: true,
+                rewrite: (path) => path.replace(/^\/filer/, ''),
+                secure: false
+            },
+            '/genomics': {
+                target: 'https://www.niagads.org/genomics/service/',
+                changeOrigin: true,
+                rewrite: (path) => path.replace(/^\/genomics/, ''),
+                secure: false,
+            }
+        }
+    },
 });
 
 const testing = defineConfig({
